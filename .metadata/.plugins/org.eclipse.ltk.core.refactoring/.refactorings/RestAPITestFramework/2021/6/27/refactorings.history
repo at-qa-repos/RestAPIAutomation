@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.qa.weatherApi.test&apos; to &apos;com.qa.usersApi.test&apos;&#x0D;&#x0A;- Original project: &apos;RestAPITestFramework&apos;&#x0D;&#x0A;- Original element: &apos;RestAPITestFramework/src/test/java/com.qa.weatherApi.test&apos;&#x0D;&#x0A;- Renamed element: &apos;RestAPITestFramework/src/test/java/com.qa.usersApi.test&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.qa.weatherApi.test&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java&lt;com.qa.weatherApi.test" name="com.qa.usersApi.test" qualified="false" references="true" stamp="1624783687201" textual="false" version="1.0"/>
+</session>

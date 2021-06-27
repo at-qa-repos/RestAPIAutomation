@@ -1,0 +1,37 @@
+package com.qa.requestManager;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import com.qa.testBase.BaseTest;
+import com.qa.utils.GenericUtils;
+import com.qa.utils.PropertiesManager;
+
+import io.restassured.response.Response;
+
+public class GetRequestManager {
+
+	HashMap<String, String> testData;
+	
+	public static PropertiesManager properties = PropertiesManager.getInstance();
+	String firstNameResponse = "";
+	String lastNameResponse = "";
+	String emailResponse = "";
+	String dateOfBirthResponse = "";
+	
+	public boolean verifyUserDetails(Response response, String firstName, String lastName, String email, String dateOfBirth){
+		
+		firstNameResponse = response.jsonPath().getString("firstName");
+		lastNameResponse = response.jsonPath().getString("lastName");
+		emailResponse = response.jsonPath().getString("email");
+		dateOfBirthResponse = response.jsonPath().getString("dayOfBirth");
+		String expectedString = firstName + "||" + lastName + "||" + email + "||" + dateOfBirth;
+		String responseString = firstNameResponse + "||" + lastNameResponse + "||" + emailResponse + "||" + dateOfBirthResponse;
+		if(expectedString.equals(responseString)){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+}

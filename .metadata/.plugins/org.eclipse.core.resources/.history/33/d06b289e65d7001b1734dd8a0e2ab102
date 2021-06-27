@@ -1,0 +1,29 @@
+#Log Messages for Test Cases
+VerifyUserTest=Verify User details for UserId [ %s ]
+VerifyUserTestDescription=This test verifies the details of the user with UserId [ %s ]
+VerifyUserTestCategory=Verify User details
+VerifyUserTestStart=Test to verify the details of the user with UserId [ %s ] started 
+VerifyGetUserDetailsTest=Verify user details for user with UserId [ %s ] passed successfully
+
+VerifyCreateUserTest=Verify creating a new user
+VerifyCreateUserTestDescription=This test verifies the user gets created successfully
+VerifyCreateUserTestCategory=Verify Create a New User 
+VerifyCreateUserTestStart=Test to verify that the user gets created successfully started
+
+VerifyDeleteUserTest=Verify deleting a new user
+VerifyDeleteUserTestDescription=This test verifies the user gets deleted successfully
+VerifyDeleteUserTestCategory=Verify Delete a newly created user 
+VerifyDeleteUserTestStart=Test to verify that the user gets deleted successfully started
+VerifyDeleteNonExistingUserTest=Verify deleting a non existing user
+VerifyDeleteNonExistingUserTestDescription=This test verifies the user gets deleted successfully
+VerifyDeleteNonExistingUserTestCategory=Verify Delete a newly created user 
+VerifyDeleteNonExistingUserTestStart=Test to verify that the user gets deleted successfully started
+
+CreateUserSuccess=The User with UserId [ %s ] got created successfully
+DeleteUserSuccess=The User with UserId [ %s ] got deleted successfully
+DeleteNonExistingUserSuccess=The User with UserId [ %s ] do not exist
+UserConditions=The User conditions in [ %s, %s ] for the next %s days are as follows [ %s ]
+ItWillRain=It will Rain in next [ %s ] days in [ %s, %s ]
+ItWillNotRain=It will not Rain in next [ %s ] days in [ %s, %s ]
+InvalidResponse=Invalid Response [%s] observed. Please check the details
+ErrorOccurred=An Error occurred. Please check logs for details

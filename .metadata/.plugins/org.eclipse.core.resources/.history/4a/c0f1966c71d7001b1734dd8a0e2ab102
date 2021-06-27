@@ -1,0 +1,47 @@
+#Log Messages for Test Cases
+VerifyUserTest=Verify user details
+VerifyUserTestDescription=This test verifies the details of the user with UserId [ %s ]
+VerifyUserTestCategory=Verify User details
+VerifyUserTestStart=Test to verify the details of the user with UserId [ %s ] started 
+VerifyGetUserDetailsTest=Verify user details for user with UserId [ %s ] passed successfully
+
+VerifyUserDetailsFormatTest=Verify user details format
+VerifyUserDetailsFormatTestDescription=This test verifies the format of the details for the user with UserId [ %s ]
+VerifyUserDetailsFormatTestCategory=Verify User format details
+VerifyUserDetailsFormatTestStart=Test to verify the format of the details for the user with UserId [ %s ] started 
+VerifyGetUserDetailsFormatTest=Verify user format of the details for user with UserId [ %s ] passed successfully
+
+VerifyCreateUserTest=Verify creating a new user
+VerifyCreateUserTestDescription=This test verifies the user gets created successfully
+VerifyCreateUserTestCategory=Verify Create a New User 
+VerifyCreateUserTestStart=Test to verify that the user gets created successfully started
+
+VerifyCreateUserWithDuplicateEmailTest=Verify creating a new user with duplicate email
+VerifyCreateUserWithDuplicateEmailTestDescription=This test verifies the user gets created successfully
+VerifyCreateUserWithDuplicateEmailTestCategory=Verify Create a New User 
+VerifyCreateUserWithDuplicateEmailTestStart=Test to verify that the user gets created successfully started
+
+VerifyCreateUserWithDuplicateFN_LN_DOBTest=Verify creating a new user
+VerifyCreateUserWithDuplicateFN_LN_DOBTestDescription=This test verifies the user gets created successfully
+VerifyCreateUserWithDuplicateFN_LN_DOBTestCategory=Verify Create a New User 
+VerifyCreateUserWithDuplicateFN_LN_DOBTestStart=Test to verify that the user gets created successfully started
+
+VerifyDeleteUserTest=Verify deleting a new user
+VerifyDeleteUserTestDescription=This test verifies the user gets deleted successfully
+VerifyDeleteUserTestCategory=Verify Delete a newly created user 
+VerifyDeleteUserTestStart=Test to verify that the user gets deleted successfully started
+VerifyDeleteNonExistingUserTest=Verify deleting a non existing user
+VerifyDeleteNonExistingUserTestDescription=This test verifies the user gets error message when trying to delete a non existing user
+VerifyDeleteNonExistingUserTestCategory=Verify Delete a non existing user 
+VerifyDeleteNonExistingUserTestStart=Test to verify that the user gets error message when trying to delete a non existing user started
+
+CreateUserSuccess=The User with UserId [ %s ] got created successfully
+CreateUserWithDuplicateFN_LN_DOBSuccess=The User with duplicate details [ %s, %s, %s ] got created successfully
+CreateUserWithDuplicateEmail=User creation failed. A user with email id [ %s ] already exists.
+DeleteUserSuccess=The User with UserId [ %s ] got deleted successfully
+DeleteNonExistingUserSuccess=The User with UserId [ %s ] do not exist
+UserConditions=The User conditions in [ %s, %s ] for the next %s days are as follows [ %s ]
+ItWillRain=It will Rain in next [ %s ] days in [ %s, %s ]
+ItWillNotRain=It will not Rain in next [ %s ] days in [ %s, %s ]
+InvalidResponse=Invalid Response [%s] observed. Please check the details
+ErrorOccurred=An Error occurred. Please check logs for details

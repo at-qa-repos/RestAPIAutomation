@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="11" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2908" started-at="2021-06-27T18:04:08Z" finished-at="2021-06-27T18:04:11Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2908" started-at="2021-06-27T18:04:08Z" finished-at="2021-06-27T18:04:11Z">
+      <class name="com.qa.usersApi.test.GetRequestTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.qa.usersApi.test.GetRequestTest@6d4b1c02]" name="beforeSuite" is-config="true" duration-ms="175" started-at="2021-06-27T18:04:08Z" finished-at="2021-06-27T18:04:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="verifyUserBasedOnUserId()[pri:0, instance:com.qa.usersApi.test.GetRequestTest@6d4b1c02]" name="verifyUserBasedOnUserId" duration-ms="1643" started-at="2021-06-27T18:04:08Z" finished-at="2021-06-27T18:04:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserBasedOnUserId -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.usersApi.test.GetRequestTest@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="4" started-at="2021-06-27T18:04:10Z" finished-at="2021-06-27T18:04:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserBasedOnUserId status=SUCCESS method=GetRequestTest.verifyUserBasedOnUserId()[pri:0, instance:com.qa.usersApi.test.GetRequestTest@6d4b1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifyUserDetailsFieldFormats()[pri:0, instance:com.qa.usersApi.test.GetRequestTest@6d4b1c02]" name="verifyUserDetailsFieldFormats" duration-ms="370" started-at="2021-06-27T18:04:10Z" finished-at="2021-06-27T18:04:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserDetailsFieldFormats -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.usersApi.test.GetRequestTest@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-27T18:04:10Z" finished-at="2021-06-27T18:04:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserDetailsFieldFormats status=SUCCESS method=GetRequestTest.verifyUserDetailsFieldFormats()[pri:0, instance:com.qa.usersApi.test.GetRequestTest@6d4b1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.qa.usersApi.test.GetRequestTest@6d4b1c02]" name="generateReport" is-config="true" duration-ms="230" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- com.qa.usersApi.test.GetRequestTest -->
+      <class name="com.qa.usersApi.test.DeleteRequestTest">
+        <test-method status="PASS" signature="verifyDeleteAnAlreadyDeletedUserTest()[pri:0, instance:com.qa.usersApi.test.DeleteRequestTest@5622fdf]" name="verifyDeleteAnAlreadyDeletedUserTest" duration-ms="125" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteAnAlreadyDeletedUserTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.usersApi.test.DeleteRequestTest@5622fdf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeleteAnAlreadyDeletedUserTest status=SUCCESS method=DeleteRequestTest.verifyDeleteAnAlreadyDeletedUserTest()[pri:0, instance:com.qa.usersApi.test.DeleteRequestTest@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifyDeleteUserTest()[pri:0, instance:com.qa.usersApi.test.DeleteRequestTest@5622fdf]" name="verifyDeleteUserTest" duration-ms="95" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteUserTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.usersApi.test.DeleteRequestTest@5622fdf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeleteUserTest status=SUCCESS method=DeleteRequestTest.verifyDeleteUserTest()[pri:0, instance:com.qa.usersApi.test.DeleteRequestTest@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.qa.usersApi.test.DeleteRequestTest -->
+      <class name="com.qa.usersApi.test.PostRequestTest">
+        <test-method status="PASS" signature="verifyCreateUserTest()[pri:0, instance:com.qa.usersApi.test.PostRequestTest@6093dd95]" name="verifyCreateUserTest" duration-ms="507" started-at="2021-06-27T18:04:10Z" finished-at="2021-06-27T18:04:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateUserTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.usersApi.test.PostRequestTest@6093dd95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCreateUserTest status=SUCCESS method=PostRequestTest.verifyCreateUserTest()[pri:0, instance:com.qa.usersApi.test.PostRequestTest@6093dd95] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifyCreateUserWithDuplicateEmailIdTest()[pri:0, instance:com.qa.usersApi.test.PostRequestTest@6093dd95]" name="verifyCreateUserWithDuplicateEmailIdTest" duration-ms="44" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateUserWithDuplicateEmailIdTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.usersApi.test.PostRequestTest@6093dd95]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCreateUserWithDuplicateEmailIdTest status=SUCCESS method=PostRequestTest.verifyCreateUserWithDuplicateEmailIdTest()[pri:0, instance:com.qa.usersApi.test.PostRequestTest@6093dd95] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifyCreateUserWithDuplicateFN_LN_DOBTest()[pri:0, instance:com.qa.usersApi.test.PostRequestTest@6093dd95]" name="verifyCreateUserWithDuplicateFN_LN_DOBTest" duration-ms="92" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateUserWithDuplicateFN_LN_DOBTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.usersApi.test.PostRequestTest@6093dd95]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-06-27T18:04:11Z" finished-at="2021-06-27T18:04:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCreateUserWithDuplicateFN_LN_DOBTest status=SUCCESS method=PostRequestTest.verifyCreateUserWithDuplicateFN_LN_DOBTest()[pri:0, instance:com.qa.usersApi.test.PostRequestTest@6093dd95] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.qa.usersApi.test.PostRequestTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

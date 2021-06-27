@@ -1,0 +1,9 @@
+package com.qa.usersApi.test;
+
+import com.qa.testBase.BaseTest;
+
+public class PostRequestTest extends BaseTest{
+
+	private static String BASE_URL = properties.getConfig("BASE_URL");
+	
+}

@@ -1,0 +1,11 @@
+#Log Messages for Test Cases
+VerifyWeatherTest=Verify Weather Test in [ %s, %s ]
+VerifyWeatherTestDescription=This test verifies whether it will rain in next [ %s ] days in [ %s, %s ]
+VerifyWeatherTestCategory=Verify Rain
+VerifyRainfallTestStart=Test to verify rainfall in next [ %s ] in [ %s, %s ] started 
+
+WeatherConditions=The Weather conditions in [ %s, %s ] for the next %s days are as follows [ %s ]
+ItWillRain=It will Rain in next [ %s ] days in [ %s, %s ]
+ItWillNotRain=It will not Rain in next [ %s ] days in [ %s, %s ]
+InvalidResponse=Invalid Response [%s] observed. Please check the details
+ErrorOccurred=An Error occurred. Please check logs for details

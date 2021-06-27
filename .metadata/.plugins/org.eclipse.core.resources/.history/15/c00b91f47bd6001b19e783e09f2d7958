@@ -1,0 +1,51 @@
+package com.qa.requestManager;
+
+import java.util.ArrayList;
+
+import com.qa.testBase.BaseTest;
+import com.qa.utils.GenericUtils;
+import com.qa.utils.PropertiesManager;
+
+import io.restassured.response.Response;
+
+public class GetRequestManager {
+
+
+	public static PropertiesManager properties = PropertiesManager.getInstance();
+	
+	public void verifyUserDetails(Response response, String firstName, String lastName, String email, String dateOfBirth){
+		ArrayList<String> weatherList = null;
+		boolean willRain = false;
+		weatherList = GenericUtils.getListOfDataFromAPIResponse(response, numOfDaysToTest);
+		for (String listOfWeatherData : weatherList) {		
+			if(listOfWeatherData.contains("rain")){
+				willRain = true;
+			}
+		}
+		BaseTest.logInfo(String.format(properties.getLogMessage("WeatherConditions"), city, country, numOfDaysToTest, weatherList.toString()));
+		if(willRain){
+			BaseTest.logInfo(String.format(properties.getLogMessage("ItWillRain"), numOfDaysToTest, city, country));
+		}
+		else{
+			BaseTest.logInfo(String.format(properties.getLogMessage("ItWillNotRain"), numOfDaysToTest, city, country));
+		}
+	}
+	
+	public void verifyRainFallInGivenNoOfDays(Response response, int numOfDaysToTest, String city, String country){
+		ArrayList<String> weatherList = null;
+		boolean willRain = false;
+		weatherList = GenericUtils.getListOfDataFromAPIResponse(response, numOfDaysToTest);
+		for (String listOfWeatherData : weatherList) {		
+			if(listOfWeatherData.contains("rain")){
+				willRain = true;
+			}
+		}
+		BaseTest.logInfo(String.format(properties.getLogMessage("WeatherConditions"), city, country, numOfDaysToTest, weatherList.toString()));
+		if(willRain){
+			BaseTest.logInfo(String.format(properties.getLogMessage("ItWillRain"), numOfDaysToTest, city, country));
+		}
+		else{
+			BaseTest.logInfo(String.format(properties.getLogMessage("ItWillNotRain"), numOfDaysToTest, city, country));
+		}
+	}
+}

@@ -1,0 +1,60 @@
+package com.qa.usersApi.test;
+
+import static io.restassured.RestAssured.given;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.qa.requestManager.GetRequestManager;
+import com.qa.testBase.BaseTest;
+
+import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
+
+public class PostRequestTest extends BaseTest{
+
+	private static String BASE_URL = properties.getConfig("BASE_URL");
+	
+	@Test
+	public void verifyCreateUserTest() throws Exception{
+		String userId = "1";
+		String firstName = "";
+		String lastName = "";
+		String email = "";
+		String dateOfBirth = ""; 
+		String requestBody = "{\n" +
+	            "  \"firstName\": \"Atul\",\n" +
+	            "  \"lastName\": \"Ranjan\",\n" +
+	            "  \"email\": \"workingemailb-1@gmail.com\" \n" +
+	            "  \"dayOfBirth\": \"1991-06-27\" \n}";
+		GetRequestManager requestManager;
+		int responseCode=0;
+		try {
+			/*startTest(String.format(properties.getLogMessage("VerifyUserTest"), userId), String.format(properties.getLogMessage("VerifyUserTestDescription"), userId));
+			setTestCategory(properties.getLogMessage("VerifyUserTestCategory"));	
+			logInfo(String.format(properties.getLogMessage("VerifyUserTestStart"), userId));
+			Response response  = given().when().get(BASE_URL+"/1");
+			responseCode=response.getStatusCode();
+			System.out.println("responseCode---------------"+responseCode);
+			ResponseBody body = response.getBody();
+			System.out.println("--------"+body.asString());
+			if(responseCode==200){
+				firstName = response.jsonPath().getString("firstName");
+				lastName = response.jsonPath().getString("lastName");
+				email = response.jsonPath().getString("email");
+				dateOfBirth = response.jsonPath().getString("dateOfBirth");
+				requestManager = new GetRequestManager();
+				requestManager.verifyUserDetails(response, firstName, lastName, email, dateOfBirth);
+			}
+			else{
+				logError(String.format(properties.getLogMessage("InvalidResponse"), responseCode));
+				Assert.assertTrue(responseCode==200);
+			}
+		} catch (Exception e) {
+			logError(properties.getLogMessage("ErrorOccurred"));
+			e.printStackTrace();
+			throw e;
+		}*/
+	}
+
+}

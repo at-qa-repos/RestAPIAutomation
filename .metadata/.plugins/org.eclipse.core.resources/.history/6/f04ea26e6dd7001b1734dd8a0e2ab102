@@ -1,0 +1,57 @@
+package com.qa.requestManager;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import com.qa.utils.PropertiesManager;
+import io.restassured.response.Response;
+
+public class GetRequestManager {
+
+	HashMap<String, String> testData;
+
+	public static PropertiesManager properties = PropertiesManager.getInstance();
+	String firstNameResponse = "";
+	String lastNameResponse = "";
+	String emailResponse = "";
+	String dateOfBirthResponse = "";
+
+	public boolean verifyUserDetails(Response response, String firstName, String lastName, String email, String dateOfBirth){
+		firstNameResponse = response.jsonPath().getString("firstName");
+		lastNameResponse = response.jsonPath().getString("lastName");
+		emailResponse = response.jsonPath().getString("email");
+		dateOfBirthResponse = response.jsonPath().getString("dayOfBirth");
+		String expectedString = firstName + "||" + lastName + "||" + email + "||" + dateOfBirth;
+		String responseString = firstNameResponse + "||" + lastNameResponse + "||" + emailResponse + "||" + dateOfBirthResponse;
+		if(expectedString.equals(responseString)){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}	
+
+	public boolean verifyFieldFormats(Response response){		
+		try {
+			firstNameResponse = response.jsonPath().getString("firstName");
+			lastNameResponse = response.jsonPath().getString("lastName");
+			dateOfBirthResponse = response.jsonPath().getString("dayOfBirth");
+			String pattern = "yyyy-MM-dd";
+			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+			Date date = simpleDateFormat.parse("2018-09-09");
+
+			if(firstNameResponse.length()>=2 && firstNameResponse.length()<=30 && lastNameResponse.length()>=2 && lastNameResponse.length()<=15){
+				System.out.println("True---------------");
+				return true;
+
+			}
+			return false;	
+		}
+		catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

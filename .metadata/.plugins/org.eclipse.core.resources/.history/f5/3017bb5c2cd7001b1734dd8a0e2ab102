@@ -1,0 +1,13 @@
+BASE_URL=http://localhost:8080/api/users
+NUMBER_OF_DAYS_TO_TEST=7
+API_KEY=ed61c74356234b76adbe1a709101b29e
+JSON_USERS_PATH=/Config Files/Users.json
+TESTDATA_EXCELFILE_PATH=/TestData/TestDataExcelSheet.xlsx
+TESTDATA_SHEET_NAME=UserData
+LOG4J_PROPERTIES_FILENAME=/Config Files/log4j.properties
+CONFIG_PROPERTIES_PATH=/Config Files/Config.properties
+CONSTANTS_PROPERTIES_PATH=/Config Files/Constants.properties
+LOGMESSAGES_PROPERTIES_PATH=/Config Files/LogMessages.properties
+HTMLREPORT_PATH=/Execution_Reports/HTML_Report
+HTMLREPORT_NAME=/QA_AUTOMATION_REPORT.html
+
